@@ -28,10 +28,15 @@ export default function Countdown() {
             minutes: m.toString().padStart(2, "0"), seconds: s.toString().padStart(2, "0")};
     }
 
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const [timeLeft, setTimeLeft] = useState<null | ReturnType<typeof calculateTimeLeft>>(null);
 
-    // update timer every second
+    
     useEffect(() => {
+        // only render timer on client as times will be different
+        // if calculate on server as well
+        setTimeLeft(calculateTimeLeft());
+
+        // update timer every second
         const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
@@ -39,6 +44,13 @@ export default function Countdown() {
         return () => clearInterval(timer);
     }, []);
 
+
+    // display loading message if haven't calculated time on client side yet
+    if (!timeLeft) {
+        return<p>Loading timer</p>;
+    }
+
+    // otherwise format and return time
     return (
         <div style={{
             textAlign: "center",
