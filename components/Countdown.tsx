@@ -14,16 +14,18 @@ export default function Countdown() {
 
         // if have reached voting time, display all 0's (don't go to negatvies)
         if (distance < 0) {
-            return {days: 0, hours: 0, minutes: 0, seconds: 0};
+            return {days: "0", hours: "00", minutes: "00", seconds: "00"};
         }
 
         // split distance into days, hours, minutes, and seconds
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((distance % (1000 * 60)) / 1000);
 
-        return {days, hours, minutes, seconds};
+        // pad hours, minutes, and seconds with leading 0's as needed
+        return {days: d.toString(), hours: h.toString().padStart(2, "0"), 
+            minutes: m.toString().padStart(2, "0"), seconds: s.toString().padStart(2, "0")};
     }
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
