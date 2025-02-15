@@ -1,9 +1,13 @@
-import HelloWorld from "@/components/hello-world";
+import Countdown from "@/components/Countdown";
 
 export default function Home() {
   return (
-    <div className="app">
+    <main style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}>
+      <Countdown />
+    </main>
+    
+    /*<div className="app">
       <HelloWorld />
-    </div>
+    </div> */
   );
 }
