@@ -53,13 +53,12 @@ export default function Countdown() {
     // otherwise format and return time
     return (
         <div style={{
-            textAlign: "center",
+            textAlign: "left",
             padding: "20px",
-            border: "2px solid #000",
-            borderRadius: "10px",
+            color: "white",
             maxWidth: "300px",
             margin: "20px auto",
-            fontSize: "1.5rem",
+            fontSize: "20px",
             fontWeight: "bold",
         }}>
             <h3>VOTING BEGINS IN: </h3>

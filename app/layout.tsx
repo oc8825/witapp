@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
+import { Open_Sans} from "next/font/google";
 
 import "@/styles/globals.scss";
 import "../styles/custom.scss";
 
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
+});
+
 export const metadata: Metadata = {
-  title: "With Sass",
-  description: "Next.js example with Sass.",
+  title: "WIT Contests",
+  description: "Landing Page for WIT voting contest.",
 };
 
 export default function RootLayout({
@@ -14,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={openSans.variable}>
       <body>{children}</body>
     </html>
   );
