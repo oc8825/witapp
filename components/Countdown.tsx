@@ -1,5 +1,7 @@
 "use client";
 
+import styles from "../styles/countdownStyle.module.scss";
+
 import {useState, useEffect} from "react";
 
 // handles the calculations and styling of the countdown to voting time
@@ -52,17 +54,9 @@ export default function Countdown() {
 
     // otherwise format and return time
     return (
-        <div style={{
-            textAlign: "left",
-            padding: "20px",
-            color: "white",
-            maxWidth: "300px",
-            margin: "20px auto",
-            fontSize: "20px",
-            fontWeight: "bold",
-        }}>
+        <div className={styles['countdown-container']}>
             <h3>VOTING BEGINS IN: </h3>
-      <p>{timeLeft.days}D {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}</p>
-    </div>
+            <p>{timeLeft.days}D {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}</p>
+        </div>
     );
 }
