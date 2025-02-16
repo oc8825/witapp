@@ -55,8 +55,7 @@ export default function Countdown() {
     // otherwise format and return time
     return (
         <div className={styles['countdown-container']}>
-            <h3>VOTING BEGINS IN: </h3>
-            <p>{timeLeft.days}D {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}</p>
+            <p>VOTING BEGINS IN: {timeLeft.days}D {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}</p>
         </div>
     );
 }
