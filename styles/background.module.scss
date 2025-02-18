@@ -9,12 +9,22 @@
       linear-gradient(0deg, #CE022C, #CE022C),
       linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
       linear-gradient(0deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
-      url("../images/background2x.png");
+      url("/images/background2x.png");
   }
 
 .video-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
   background-color: white;
   color: black;
+}
+
+.video-image {
+  transform: scale(0.5);
 }
 
 .cta-section {

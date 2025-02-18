@@ -20,7 +20,11 @@ export default function Home() {
       </Link>
     </div>
     <div className={backgroundStyles["video-section"]}>
-      <p>This is the video section</p>
+      <img src="/images/video1.png" className={backgroundStyles["video-image"]} alt="Image 1" />
+      <img src="/images/video2.png" className={backgroundStyles["video-image"]} alt="Image 2" />
+      <img src="/images/video3.png" className={backgroundStyles["video-image"]} alt="Image 3" />
+      <img src="/images/video4.png" className={backgroundStyles["video-image"]} alt="Image 4" />
+      <img src="/images/video5.png" className={backgroundStyles["video-image"]} alt="Image 5" />    
     </div>
     <div className={backgroundStyles["cta-section"]}>
       <p>This is the CTA section</p>
