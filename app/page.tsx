@@ -3,7 +3,7 @@
 import Countdown from "@/components/Countdown";
 import Link from "next/link";
 import buttonStyles from "@/styles/buttons.module.scss";
-import backgroundStyles from "@/styles/backgroundStyles.module.scss";
+import backgroundStyles from "@/styles/background.module.scss";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
