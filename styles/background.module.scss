@@ -1,4 +1,4 @@
-.tinted-background {
+.main-section {
     height: 100vh;
     
     background-repeat: no-repeat;
@@ -11,3 +11,18 @@
       linear-gradient(0deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
       url("../images/background2x.png");
   }
+
+.video-section {
+  background-color: white;
+  color: black;
+}
+
+.cta-section {
+  background-color: #F5F5F5;
+  color: black;
+}
+
+.footer-section {
+  background-color: #7E011C;
+  color: white;
+}

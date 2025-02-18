@@ -10,13 +10,27 @@ export default function Home() {
   const router = useRouter();
 
   return (
-   <div className={backgroundStyles["tinted-background"]}>
+   <div>
+    <div className={backgroundStyles["main-section"]}>
       <Countdown />
       <Link href="/enterNow">
         <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>
           ENTER NOW
         </button>
       </Link>
+    </div>
+    <div className={backgroundStyles["video-section"]}>
+      <p>This is the video section</p>
+    </div>
+    <div className={backgroundStyles["cta-section"]}>
+      <p>This is the CTA section</p>
+      <Link href="/enterNow">
+        <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>
+          ENTER NOW
+        </button>
+      </Link>
+    </div>
+    <div className={backgroundStyles["footer-section"]}>
       <Link href="/faq">
         <button className={buttonStyles["simple-button"]} onClick={() => router.push("/faq")}>
           FAQ
@@ -33,6 +47,7 @@ export default function Home() {
         </button>
       </Link>
     </div>
+   </div>
     
   );
 }
