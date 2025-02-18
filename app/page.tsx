@@ -8,6 +8,9 @@ export default function Home() {
       <Link href="/enterNow">
         <button>Enter Now</button>
       </Link>
+      <Link href="/faq">
+        <button>FAQ</button>
+      </Link>
     </div>
     
   );
