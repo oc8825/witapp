@@ -11,6 +11,9 @@ export default function Home() {
       <Link href="/faq">
         <button>FAQ</button>
       </Link>
+      <Link href="/privacyPolicy">
+        <button>Privacy Policy</button>
+      </Link>
     </div>
     
   );
