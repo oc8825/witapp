@@ -1,0 +1,28 @@
+.simple-button {
+    background: none;
+    border: none;
+    color: #FD3560;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.simple-button:hover {
+    text-decoration: underline;
+}
+
+.larger-button {
+    background-color: #CE022C;
+    border: none;
+    color: white;
+    border-radius: 16px;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 5px 15px;
+    letter-spacing: 1.3px;
+    transition: background-color 0.3s ease;
+}
+
+.larger-button:hover {
+    background-color: darken(#CE022C, 10%);
+}

@@ -1,21 +1,35 @@
+"use client";
+
 import Countdown from "@/components/Countdown";
 import Link from "next/link";
+import styles from "@/styles/buttons.module.scss";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
    <div className="tinted-background">
       <Countdown />
       <Link href="/enterNow">
-        <button>Enter Now</button>
+        <button className={styles["larger-button"]} onClick={() => router.push("/enterNow")}>
+          ENTER NOW
+        </button>
       </Link>
       <Link href="/faq">
-        <button>FAQ</button>
+        <button className={styles["simple-button"]} onClick={() => router.push("/faq")}>
+          FAQ
+        </button>
       </Link>
       <Link href="/privacyPolicy">
-        <button>Privacy Policy</button>
+        <button className={styles["simple-button"]} onClick={() => router.push("/privacyPolicy")}>
+          Privacy Policy
+        </button>
       </Link>
       <Link href="/termsOfService">
-        <button>Terms of Service</button>
+        <button className={styles["simple-button"]} onClick={() => router.push("/termsOfService")}>
+          Terms of Service
+        </button>
       </Link>
     </div>
     
