@@ -1,6 +1,7 @@
 "use client";
 
 import Countdown from "@/components/Countdown";
+import PrizeCarousel from "@/components/PrizeCarousel";
 import Link from "next/link";
 import buttonStyles from "@/styles/buttons.module.scss";
 import backgroundStyles from "@/styles/background.module.scss";
@@ -13,6 +14,7 @@ export default function Home() {
    <div>
     <div className={backgroundStyles["main-section"]}>
       <Countdown />
+      <PrizeCarousel />
       <Link href="/enterNow">
         <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>
           ENTER NOW
