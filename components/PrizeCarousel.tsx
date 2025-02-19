@@ -11,7 +11,13 @@ const PrizeCarousel = () => {
 
     return (
         <div className={styles["carousel-wrapper"]}>
-            <Carousel interval={5000} activeIndex={activeIndex} onSelect={handleSelect}>
+            <Carousel
+                interval={5000}
+                activeIndex={activeIndex}
+                onSelect={handleSelect}
+                controls={false} // ❌ Removes default left/right controls
+                indicators={false} // ❌ Removes default progress dots
+            >
                 {[1, 2, 3, 4, 5].map((num, index) => (
                     <Carousel.Item key={num}>
                         <div className={styles["carousel-container"]}>
@@ -22,6 +28,7 @@ const PrizeCarousel = () => {
                             />
                             <p className={styles["prize-caption"]}>Prize {num} caption</p>
 
+                            {/* Custom Clickable Progress Bar */}
                             <div className={styles["carousel-progress"]}>
                                 {[0, 1, 2, 3, 4].map((barIndex) => (
                                     <div
@@ -29,6 +36,7 @@ const PrizeCarousel = () => {
                                         className={`${styles["progress-bar"]} ${
                                             barIndex === activeIndex ? styles.active : ""
                                         }`}
+                                        onClick={() => handleSelect(barIndex)} // 👈 Click to switch slide
                                     ></div>
                                 ))}
                             </div>
