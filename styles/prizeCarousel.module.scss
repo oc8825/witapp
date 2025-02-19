@@ -1,4 +1,21 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    max-width: 25%;
+    margin: auto;
+  }
+
 .prize-image {
     display: block;
     transform: scale(0.5);
 }
+
+.prize-caption {
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    margin-top: 5px;
+  }
