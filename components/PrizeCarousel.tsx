@@ -1,9 +1,17 @@
 import { Carousel } from "react-bootstrap";
 import styles from "../styles/prizeCarousel.module.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const PrizeCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex((prevIndex) => (prevIndex + 1) % 5);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     const handleSelect = (selectedIndex: number) => {
         setActiveIndex(selectedIndex);
@@ -12,13 +20,13 @@ const PrizeCarousel = () => {
     return (
         <div className={styles["carousel-wrapper"]}>
             <Carousel
-                interval={5000}
                 activeIndex={activeIndex}
                 onSelect={handleSelect}
-                controls={false} // ❌ Removes default left/right controls
-                indicators={false} // ❌ Removes default progress dots
+                controls={false} 
+                indicators={false} 
+                fade={true}
             >
-                {[1, 2, 3, 4, 5].map((num, index) => (
+                {[1, 2, 3, 4, 5].map((num) => (
                     <Carousel.Item key={num}>
                         <div className={styles["carousel-container"]}>
                             <img
@@ -28,7 +36,6 @@ const PrizeCarousel = () => {
                             />
                             <p className={styles["prize-caption"]}>Prize {num} caption</p>
 
-                            {/* Custom Clickable Progress Bar */}
                             <div className={styles["carousel-progress"]}>
                                 {[0, 1, 2, 3, 4].map((barIndex) => (
                                     <div
@@ -36,7 +43,7 @@ const PrizeCarousel = () => {
                                         className={`${styles["progress-bar"]} ${
                                             barIndex === activeIndex ? styles.active : ""
                                         }`}
-                                        onClick={() => handleSelect(barIndex)} // 👈 Click to switch slide
+                                        onClick={() => handleSelect(barIndex)}
                                     ></div>
                                 ))}
                             </div>
