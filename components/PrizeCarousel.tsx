@@ -5,6 +5,20 @@ import { useState, useEffect } from "react";
 const PrizeCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [isFirstCycle, setIsFirstCycle] = useState(true);
+    const places = [
+        "1ST PLACE",
+        "2ND PLACE",
+        "3RD PLACE",
+        "4TH PLACE",
+        "5TH PLACE"
+    ];
+    const captions = [
+        "FRESNO STATE JERSEY, $50 GIFT CARD, PEPSI PRODUCT",
+        "FRESNO STATE BACKPACK, MOPHIE POWER PACK, PEPSI PRODUCT",
+        "FRESNO STATE BLANKET, PEPSI PRODUCT",
+        "DAVANTE ADAMS BOBBLEHEAD",
+        "BIG THREE BOBBLEHEAD (PAUL GEORGE, AARON JUDGE, DEREK CARR)"
+    ];
 
     useEffect(() => {
         /* The first cycle was skipping the second slide. Make first cycle slightly
@@ -41,7 +55,8 @@ const PrizeCarousel = () => {
                                 src={`/images/carousel${num}.png`}
                                 alt={`Prize ${num}`}
                             />
-                            <p className={styles["prize-caption"]}>Prize {num} caption</p>
+                            <h3 className={styles["prize-caption"]}>{places[num - 1]}</h3>
+                            <p className={styles["prize-caption"]}>{captions[num - 1]}</p>
 
                             <div className={styles["carousel-progress"]}>
                                 {[0, 1, 2, 3, 4].map((barIndex) => (
