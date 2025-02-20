@@ -15,8 +15,8 @@ const PrizeCarousel = () => {
     const captions = [
         "FRESNO STATE JERSEY, $50 GIFT CARD, PEPSI PRODUCT",
         "FRESNO STATE BACKPACK, MOPHIE POWER PACK, PEPSI PRODUCT",
-        "FRESNO STATE BLANKET, PEPSI PRODUCT",
-        "DAVANTE ADAMS BOBBLEHEAD",
+        "FRESNO STATE BLANKET, PEPSI <br />PRODUCT",
+        "DAVANTE ADAMS <br />BOBBLEHEAD",
         "BIG THREE BOBBLEHEAD (PAUL GEORGE, AARON JUDGE, DEREK CARR)"
     ];
 
@@ -56,7 +56,7 @@ const PrizeCarousel = () => {
                                 alt={`Prize ${num}`}
                             />
                             <h3 className={styles["prize-caption"]}>{places[num - 1]}</h3>
-                            <p className={styles["prize-caption"]}>{captions[num - 1]}</p>
+                            <p className={styles["prize-caption"]}dangerouslySetInnerHTML={{ __html: captions[num - 1] }}></p>
 
                             <div className={styles["carousel-progress"]}>
                                 {[0, 1, 2, 3, 4].map((barIndex) => (
