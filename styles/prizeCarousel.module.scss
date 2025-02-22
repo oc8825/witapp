@@ -20,8 +20,20 @@
     justify-content: center;
 }
 
+.prize-place {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7E011C;
+    margin-top: 5px;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    text-align: center;
+    padding: 0 10px;
+}
+
 .prize-caption {
     font-size: 1rem;
+    font-weight: bold;
     color: black;
     margin-top: 5px;
     word-wrap: break-word; 
