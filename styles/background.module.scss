@@ -12,19 +12,38 @@
       url("/images/background2x.png");
   }
 
-.video-section {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  max-width: 80%;
-  margin: 0 auto;
-  background-color: white;
-  color: black;
-}
+  .video-section {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+    padding: 20px;
+    width: calc(100% - 278px); 
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    flex-wrap: nowrap;
+    overflow: hidden; 
+  
+    @media (max-width: 768px) {
+      width: 100%; 
+      overflow-x: auto; 
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 10px;
+    }
+  }
 
 .video-image {
   transform: scale(0.5);
+  flex: 1; 
+  max-width: calc((100% - 40px) / 5); 
+  min-width: 150px; 
+  scroll-snap-align: center;
+
+  @media (max-width: 768px) {
+    flex: 0 0 auto;
+    max-width: 200px; 
+  }
 }
 
 .cta-section {
