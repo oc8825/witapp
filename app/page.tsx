@@ -23,11 +23,13 @@ export default function Home() {
     </div>
     <div className={backgroundStyles["video-section"]}>
       <h3 className={backgroundStyles["video-caption"]}>Videos:</h3>
-      <img src="/images/video1.png" className={backgroundStyles["video-image"]} alt="Image 1" />
-      <img src="/images/video2.png" className={backgroundStyles["video-image"]} alt="Image 2" />
-      <img src="/images/video3.png" className={backgroundStyles["video-image"]} alt="Image 3" />
-      <img src="/images/video4.png" className={backgroundStyles["video-image"]} alt="Image 4" />
-      <img src="/images/video5.png" className={backgroundStyles["video-image"]} alt="Image 5" />    
+      <div className={backgroundStyles["video-container"]}>
+        <img src="/images/video1.png" className={backgroundStyles["video-image"]} alt="Image 1" />
+        <img src="/images/video2.png" className={backgroundStyles["video-image"]} alt="Image 2" />
+        <img src="/images/video3.png" className={backgroundStyles["video-image"]} alt="Image 3" />
+        <img src="/images/video4.png" className={backgroundStyles["video-image"]} alt="Image 4" />
+        <img src="/images/video5.png" className={backgroundStyles["video-image"]} alt="Image 5" />
+      </div>
     </div>
     <div className={backgroundStyles["cta-section"]}>
       <p>This is the CTA section</p>

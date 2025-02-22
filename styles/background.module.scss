@@ -14,16 +14,37 @@
 
   .video-section {
     display: flex;
-    justify-content: space-evenly; 
-    gap: 0px;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: calc(100% - 278px);
     margin: 0 auto;
     background-color: white;
     color: black;
+    min-height: 300px; /* Ensures section doesn't collapse */
+  
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  
+  .video-caption {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px; /* Spacing between caption and videos */
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 0px;
+    width: 100%;
     flex-wrap: nowrap;
     overflow: hidden;
-    
+    min-height: 250px; /* Prevents scrolling area from being too thin */
+  
     @media (max-width: 768px) {
       width: 100%;
       overflow-x: auto;
@@ -34,7 +55,7 @@
   }
   
   .video-image {
-    transform: scale(0.8); // downloaded larger copy, scale down
+    transform: scale(0.8);
     flex: 0 1 auto;
     max-width: calc((100% - 278px) / 5);
     min-width: 150px;
@@ -44,13 +65,6 @@
       flex: 0 0 auto;
       max-width: 200px;
     }
-  }
-
-  .video-caption {
-    color: black;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.2rem;
   }
 
 .cta-section {
