@@ -47,7 +47,7 @@ export default function Countdown() {
     }, []);
 
 
-    // display loading message if haven't calculated time on client side yet
+    // when haven't loaded time yet, don't display anything
     if (!timeLeft) {
         return<p></p>;
     }
@@ -55,7 +55,7 @@ export default function Countdown() {
     // otherwise format and return time
     return (
         <div className={styles['countdown-container']}>
-            <p>VOTING BEGINS IN: {timeLeft.days}D {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}</p>
+            <p>VOTING BEGINS IN: <b>{timeLeft.days}D {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}</b></p>
         </div>
     );
 }
