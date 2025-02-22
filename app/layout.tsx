@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Open_Sans} from "next/font/google";
-
 import "@/styles/globals.scss";
 
 const openSans = Open_Sans({
@@ -20,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={openSans.variable}>
-      <body>{children}</body>
+      <body>
+        <div className="container-fluid">{children}</div> 
+      </body>
     </html>
   );
 }
