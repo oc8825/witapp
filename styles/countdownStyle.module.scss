@@ -4,16 +4,17 @@
     font-size: 11px;
     color: white;
     max-width: 300px;
-    letter-spacing: 2.8px;
+    letter-spacing: 2.2px;
 
     // default margin for iphone
     top: 33px;
     left: 30px;
-    // Align carousel to the right on desktop
+    // Align carousel to the right on desktop, adjust font
     @media (min-width: 768px) {
         top: 42px;
         left: 50px;
         font-size: 14px;
+        letter-spacing: 2.8px;
     }
 
 }
