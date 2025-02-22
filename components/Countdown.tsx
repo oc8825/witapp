@@ -49,7 +49,7 @@ export default function Countdown() {
 
     // display loading message if haven't calculated time on client side yet
     if (!timeLeft) {
-        return<p>Loading timer</p>;
+        return<p></p>;
     }
 
     // otherwise format and return time

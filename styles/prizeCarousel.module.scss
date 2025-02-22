@@ -11,14 +11,13 @@
     max-width: 350px; 
     min-height: 250px;
 
-    /* Center carousel on mobile by default */
+    // Center carousel on mobile by default
     margin: 0 auto;
-
-    /* Align carousel to the right on desktop */
+    // Align carousel to the right on desktop
     @media (min-width: 768px) {
         margin-left: auto; 
-        margin-right: 100px;    
-        margin-top: 100px;
+        margin-right: 139px;
+        margin-top: 170px;
     }
 }
 

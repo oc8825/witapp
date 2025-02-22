@@ -1,10 +1,18 @@
 .countdown-container {
     position: absolute;
-    top: 50px;
-    left: 50px;
     text-align: left;
     font-size: 14px;
     color: white;
     max-width: 300px;
     letter-spacing: 2.8px;
+
+    // default margin for iphone
+    top: 33px;
+    left: 30px;
+    // Align carousel to the right on desktop
+    @media (min-width: 768px) {
+        top: 42px;
+        left: 50px;
+    }
+
 }
