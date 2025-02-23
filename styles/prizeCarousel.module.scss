@@ -10,15 +10,14 @@
     width: 100%; 
     max-width: 350px; 
     min-height: 250px;
+    
+    margin-left: auto;
+    margin-right: 139px;
+    margin-top: 170px;
 
-    // Center carousel on mobile by default
-    margin: 264px auto;
-    // Align carousel to the right on desktop
-    @media (min-width: 768px) {
-        margin-left: auto; 
-        margin-right: 139px;
-        margin-top: 170px;
-    }
+    @media (max-width: 768px) {
+        margin: 264px auto;
+    } 
 }
 
 .prize-text {
