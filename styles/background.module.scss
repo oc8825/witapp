@@ -88,11 +88,18 @@
   background-color: #7E011C;
   color: white;
   display: flex;
-  justify-content: center; /* Center on mobile */
+  justify-content: flex-end; 
+  padding-right: 40px;
   padding: 20px;
 
-  @media (min-width: 768px) {
-    justify-content: flex-end; /* Align right on desktop */
-    padding-right: 40px; /* 40px margin on right */
+  @media (max-width: 768px) {
+    justify-content: center;
   }
+
+  /*
+  @media (min-width: 768px) {
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  */
 }
