@@ -5,11 +5,12 @@
     font-size: 12px;
     cursor: pointer;
     padding: 5px;
-}
-
-.simple-button:hover {
+    margin: 0 10px; /* Adds spacing between buttons */
+  }
+  
+  .simple-button:hover {
     text-decoration: underline;
-}
+  }
 
 .larger-button {
     background-color: #CE022C;

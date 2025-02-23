@@ -87,4 +87,12 @@
 .footer-section {
   background-color: #7E011C;
   color: white;
+  display: flex;
+  justify-content: center; /* Center on mobile */
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    justify-content: flex-end; /* Align right on desktop */
+    padding-right: 40px; /* 40px margin on right */
+  }
 }

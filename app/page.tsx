@@ -47,11 +47,13 @@ export default function Home() {
           FAQ
         </button>
       </Link>
+      <p>|</p>
       <Link href="/privacyPolicy">
         <button className={buttonStyles["simple-button"]} onClick={() => router.push("/privacyPolicy")}>
           Privacy Policy
         </button>
       </Link>
+      <p>|</p>
       <Link href="/termsOfService">
         <button className={buttonStyles["simple-button"]} onClick={() => router.push("/termsOfService")}>
           Terms of Service
