@@ -34,7 +34,14 @@ export default function Home() {
       </div>
     </div>
     <div className={backgroundStyles["cta-section"]}>
-      <p>This is the CTA section</p>
+      <p className={backgroundStyles["cta-header"]}>
+        LAST CTA
+      </p>
+      <p className={backgroundStyles["cta-caption"]}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Curabitur tellus, pulvinar quis volutpat et,
+        mollis vitae ligula.
+      </p>
       <Link href="/enterNow">
         <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>
           ENTER NOW

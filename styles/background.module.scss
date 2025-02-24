@@ -94,6 +94,37 @@
 .cta-section {
   background-color: #F5F5F5;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-header {
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 107px;
+  padding-bottom: 0px;
+  color: black;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.cta-caption {
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: black;
+  max-width: 720px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+    max-width: 80%;
+  }
 }
 
 // style footer section and features within
