@@ -1,3 +1,10 @@
+/* PrizeCarousel.tsx
+   Using styling from prizeCarousel.module.scss, this component displays 
+   a carousel of the prizes and scrolls through automatically every 5 seconds.
+   It also allows for clicking on a certain section of the progress bar
+   to jump to the corresponding slide.
+*/
+
 import { Carousel } from "react-bootstrap";
 import styles from "../styles/prizeCarousel.module.scss";
 import { useState, useEffect } from "react";
@@ -5,6 +12,8 @@ import { useState, useEffect } from "react";
 const PrizeCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [isFirstCycle, setIsFirstCycle] = useState(true);
+    
+    // define place and caption strings for each prize
     const places = [
         "1ST PLACE",
         "2ND PLACE",
@@ -33,6 +42,7 @@ const PrizeCarousel = () => {
         return () => clearInterval(interval);
     }, [isFirstCycle]);
 
+    // handle click on progress bar
     const handleSelect = (selectedIndex: number) => {
         setActiveIndex(selectedIndex);
         setIsFirstCycle(false);
@@ -50,14 +60,18 @@ const PrizeCarousel = () => {
                 {[1, 2, 3, 4, 5].map((num) => (
                     <Carousel.Item key={num}>
                         <div className={styles["carousel-container"]}>
+                            {/* Display image */}
                             <img
                                 className={styles["prize-image"]}
                                 src={`/images/carousel${num}.png`}
                                 alt={`Prize ${num}`}
                             />
+                            {/* Display place */}
                             <h3 className={styles["prize-place"]}>{places[num - 1]}</h3>
+                            {/* Display caption */}
                             <p className={styles["prize-caption"]}dangerouslySetInnerHTML={{ __html: captions[num - 1] }}></p>
 
+                            {/* Display progress bar, coloring current section and handling clicks*/}
                             <div className={styles["carousel-progress"]}>
                                 {[0, 1, 2, 3, 4].map((barIndex) => (
                                     <div
@@ -69,6 +83,7 @@ const PrizeCarousel = () => {
                                     ></div>
                                 ))}
                             </div>
+                            
                         </div>
                     </Carousel.Item>
                 ))}
