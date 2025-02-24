@@ -1,3 +1,12 @@
+/* background.module.scss
+   Defines the styles for all background sections, including the main
+   section, video section, cta section, and footer section.This also 
+   defines styling for minor features within each background section that
+   don't need their own component (with one exception: buttons are not
+   defined in their own component, but have a seperate styling file).
+   Adjusts the styling based on the screen size.
+*/ 
+
 .main-section {
     min-height: 100vh;
     

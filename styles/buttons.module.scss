@@ -1,3 +1,11 @@
+/* buttons.modules.scss
+   Defines styles for the simple, link-style buttons to FAQ, Privacy 
+   Policy, and Terms of Service pages in the footer secion. Also defines
+   styles for the larrger Enter Now button present in both the main
+   section and the cta action. Change presense when hover over button.
+*/
+
+// link-style button
 .simple-button {
     background: none;
     border: none;
@@ -12,6 +20,7 @@
     text-decoration: underline;
   }
 
+// roiunded-rectangle style button 
 .larger-button {
     background-color: #CE022C;
     border: none;
@@ -24,6 +33,6 @@
     transition: background-color 0.3s ease;
 }
 
-.larger-button:hover {
+  .larger-button:hover {
     background-color: darken(#CE022C, 10%);
-}
+  }

@@ -17,15 +17,18 @@
     max-width: 350px; 
     min-height: 250px;
     
+    // align to the right, with margin, on desktop
     margin-left: auto;
     margin-right: 139px;
     margin-top: 170px;
 
+    // center and move further down screen on mobile
     @media (max-width: 768px) {
         margin: 264px auto;
     } 
 }
 
+// check if still used/needed
 .prize-text {
     width: 100%;
     min-height: 60px;
@@ -34,6 +37,7 @@
     justify-content: center;
 }
 
+// style accompanying text
 .prize-place {
     font-size: 1.5rem;
     font-weight: bold;
@@ -56,6 +60,7 @@
     padding: 0 10px;
 }
 
+// style images that appear within slides
 .prize-image {
     display: block;
     width: 100%;
@@ -63,6 +68,7 @@
     margin: 0 auto;
 }
 
+// style progress bar and switching slides
 .carousel-progress {
     display: flex;
     position: absolute;

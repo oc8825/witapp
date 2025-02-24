@@ -1,3 +1,8 @@
+/* countdownStyle.module.scss
+   Defines the styles for the countdown timer's container. Adjusts styling
+   based on screen size.
+*/
+
 .countdown-container {
     position: absolute;
     text-align: left;
@@ -6,10 +11,10 @@
     max-width: 300px;
     letter-spacing: 2.8px;
 
-    // default margin for iphone
+    // default margin for desktop
     top: 42px;
     left: 50px;
-    // Align carousel to the right on desktop, adjust font
+    // decrease margin, font size, and spacing for mobile
     @media (max-width: 768px) {
         top: 33px;
         left: 30px;
