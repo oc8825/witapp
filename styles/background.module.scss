@@ -7,6 +7,7 @@
    Adjusts the styling based on the screen size.
 */ 
 
+// style main section and features within
 .main-section {
     min-height: 100vh;
     
@@ -19,80 +20,83 @@
       linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
       linear-gradient(0deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .3)),
       url("/images/background2x.png");
-  }
+}
 
-  .video-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - 278px);
-    margin: 0 auto;
-    background-color: white;
-    color: black;
-    min-height: 300px;
+// style video section and features within
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 278px);
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  min-height: 300px;
   
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
-  
-  .video-caption {
+  @media (max-width: 768px) {
     width: 100%;
-    text-align: center;
-    font-size: 30px;
-    font-weight: normal;
-    padding-top: 40px;
-    padding-bottom: 0px;
-    color: black;
-
-    @media (max-width: 768px) {
-      font-size: 18px;
-    }
   }
-
-  .video-caption-red {
-    color: #CE022C;
-  }
+}
   
-  .video-container {
-    display: flex;
-    justify-content: space-evenly; 
-    gap: 0px;
+.video-caption {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  color: black;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.video-caption-red {
+  color: #CE022C;
+}
+  
+.video-container {
+  display: flex;
+  justify-content: space-evenly; 
+  gap: 0px;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  min-height: 250px;
+ 
+  @media (max-width: 768px) {
     width: 100%;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    min-height: 250px;
-  
-    @media (max-width: 768px) {
-      width: 100%;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 10px;
-    }
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
   }
+}
   
-  .video-image {
-    transform: scale(0.8);
-    flex: 0 1 auto;
-    max-width: calc((100% - 278px) / 5);
-    min-width: 150px;
-    scroll-snap-align: center;
-    padding-bottom: 100px;
+.video-image {
+  transform: scale(0.8);
+  flex: 0 1 auto;
+  max-width: calc((100% - 278px) / 5);
+  min-width: 150px;
+  scroll-snap-align: center;
+  padding-bottom: 100px;
   
-    @media (max-width: 768px) {
-      flex: 0 0 auto;
-      max-width: 200px;
-      padding-bottom: 40px;
-    }
+  @media (max-width: 768px) {
+    flex: 0 0 auto;
+    max-width: 200px;
+    padding-bottom: 40px;
   }
+}
 
+// style cta section and features within
 .cta-section {
   background-color: #F5F5F5;
   color: black;
 }
 
+// style footer section and features within
 .footer-section {
   background-color: #7E011C;
   color: white;
