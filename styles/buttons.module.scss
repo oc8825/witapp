@@ -16,9 +16,9 @@
     margin: 0 10px;
   }
   
-  .simple-button:hover {
-    text-decoration: underline;
-  }
+.simple-button:hover {
+  text-decoration: underline;
+}
 
 // roiunded-rectangle style button 
 .larger-button {
@@ -33,6 +33,6 @@
     transition: background-color 0.3s ease;
 }
 
-  .larger-button:hover {
-    background-color: darken(#CE022C, 10%);
-  }
+.larger-button:hover {
+  background-color: darken(#CE022C, 10%);
+}
