@@ -184,14 +184,11 @@
   overflow: hidden;
   font-size: 12px;
   line-height: normal;
-  
-  // wouldn't center vertically in footer section on desktop, so push downward
-  @media (min-width: 768px) {
-    padding-top: 15px;
-  }
+  padding-top: 15px;
 
 
   @media (max-width: 768px) {
     font-size: 10px; 
+
   }
 }
