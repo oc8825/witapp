@@ -161,3 +161,22 @@
   height: auto;
   transform: scale(0.5);
 }
+
+.copyright-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  
+  @media (max-width: 768px) {
+    justify-content: center; 
+  }
+}
+
+.copyright-text {
+  color: white;
+  font-size: 12;
+
+  @media (max-width: 768px) {
+    font-size: 10; 
+  }
+}
