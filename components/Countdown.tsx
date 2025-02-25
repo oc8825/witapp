@@ -1,6 +1,6 @@
 /* Countdown.tsx
    Using styling from countdownStyle.module.scss, this component displays
-   a countdown to the start of voting, which is set to March 7th
+   a countdown to the start of voting, which is set to March 19th
    at noon. The timer is updated every second
 */
 
@@ -13,8 +13,8 @@ import {useState, useEffect} from "react";
 // handles the calculations and styling of the countdown to voting time
 export default function Countdown() {
     
-    // set arbitrary target date to March 7th at noon
-    const targetDate = new Date("March 7, 2025 12:00:00").getTime();
+    // set arbitrary target date to March 19th at noon
+    const targetDate = new Date("March 19, 2025 12:00:00").getTime();
 
     const calculateTimeLeft = () => {
         const now = new Date().getTime();
