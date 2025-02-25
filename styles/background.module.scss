@@ -149,6 +149,8 @@
 .footer-image-container {
   display: flex;
   align-items: center;
+  height: 100%;
+  flex: 1;
   justify-content: flex-start; 
   
   @media (max-width: 768px) {
@@ -166,9 +168,8 @@
 .copyright-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
-  align-self: center;
-  height: 100%;
+  justify-content: center; 
+  flex: 1;
   
   @media (max-width: 768px) {
     justify-content: center; 
@@ -178,10 +179,16 @@
 
 .copyright-text {
   color: white;
-
-  white-space: nowrap; // Prevents text from wrapping
+  white-space: nowrap;
   overflow: hidden;
   font-size: 12px;
+  line-height: normal;
+  
+  // wouldn't center vertically in footer section on desktop, so push downward
+  @media (min-width: 768px) {
+    padding-top: 15px;
+  }
+
 
   @media (max-width: 768px) {
     font-size: 10px; 
