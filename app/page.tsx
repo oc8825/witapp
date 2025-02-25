@@ -22,6 +22,14 @@ export default function Home() {
           className={backgroundStyles["fresno-logo-image"]}
         />
       </div>
+      <div className={backgroundStyles["next-contest-container"]}>
+        <p className={backgroundStyles["next-contest-text"]}>
+          OUR NEXT CONTEST:
+        </p>
+        <p className={backgroundStyles["next-contest-hashtag"]}>
+          #LOREMIPSUMDOLOR
+        </p>
+      </div>
       <Link href="/enterNow">
         <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>
           ENTER NOW
