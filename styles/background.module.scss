@@ -2,9 +2,10 @@
    Defines the styles for all background sections, including the main
    section, video section, cta section, and footer section.This also 
    defines styling for minor features within each background section that
-   don't need their own component (with one exception: buttons are not
-   defined in their own component, but have a seperate styling file).
-   Adjusts the styling based on the screen size.
+   don't need their own component (with one exception: as buttons appear
+   in mutliple sections, they have a seperate styling file even though
+   they are not defined in their own component). Adjusts the styling 
+   based on the screen size.
 */ 
 
 // style main section and features within
