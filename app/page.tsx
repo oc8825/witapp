@@ -49,36 +49,34 @@ export default function Home() {
       </Link>
     </div>
     <div className={backgroundStyles["footer-section"]}>
-
-
-    <div className={backgroundStyles["footer-image-container"]}>
-    <img
-  src="/images/witLogo2x.png"
-  alt="Footer Logo"
-  className={backgroundStyles["footer-image"]}
-/>
+      <div className={backgroundStyles["footer-image-container"]}>
+        <img
+          src="/images/witLogo2x.png"
+          alt="Footer Logo"
+          className={backgroundStyles["footer-image"]}
+        />
+      </div>
+      <div className={buttonStyles["simple-button-container"]}>
+        <Link href="/faq">
+          <button className={buttonStyles["simple-button"]} onClick={() => router.push("/faq")}>
+            FAQ
+          </button>
+        </Link>
+        <span className={buttonStyles["divider"]}>|</span>
+        <Link href="/privacyPolicy">
+          <button className={buttonStyles["simple-button"]} onClick={() => router.push("/privacyPolicy")}>
+            Privacy Policy
+          </button>
+        </Link>
+        <span className={buttonStyles["divider"]}>|</span>
+        <Link href="/termsOfService">
+          <button className={buttonStyles["simple-button"]} onClick={() => router.push("/termsOfService")}>
+            Terms of Service
+          </button>
+        </Link>
+      </div>
+    </div>
   </div>
-  <div className={buttonStyles["simple-button-container"]}>
-    <Link href="/faq">
-      <button className={buttonStyles["simple-button"]} onClick={() => router.push("/faq")}>
-        FAQ
-      </button>
-    </Link>
-    <span className={buttonStyles["divider"]}>|</span>
-    <Link href="/privacyPolicy">
-      <button className={buttonStyles["simple-button"]} onClick={() => router.push("/privacyPolicy")}>
-        Privacy Policy
-      </button>
-    </Link>
-    <span className={buttonStyles["divider"]}>|</span>
-    <Link href="/termsOfService">
-      <button className={buttonStyles["simple-button"]} onClick={() => router.push("/termsOfService")}>
-        Terms of Service
-      </button>
-    </Link>
-  </div>
-</div>
-   </div>
     
   );
 }

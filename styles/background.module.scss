@@ -135,8 +135,8 @@
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -148,15 +148,15 @@
 .footer-image-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Aligns to the left */
+  justify-content: flex-start; 
   
   @media (max-width: 768px) {
-    justify-content: center; /* Centers the image on mobile */
+    justify-content: center; 
   }
 }
 
 .footer-image {
-  max-width: 150px; /* Adjust size as needed */
+  max-width: 150px; 
   height: auto;
   transform: scale(0.5);
 }
