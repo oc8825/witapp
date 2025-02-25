@@ -20,17 +20,19 @@
   text-decoration: underline;
 }
 
-// roiunded-rectangle style button 
+// rounded-rectangle style button 
 .larger-button {
     background-color: #CE022C;
     border: none;
     color: white;
-    border-radius: 16px;
+    border-radius: 20px;
     font-size: 13px;
     cursor: pointer;
     padding: 5px 15px;
     letter-spacing: 1.3px;
     transition: background-color 0.3s ease;
+    height: 40px;
+    width: 140px;
 }
 
 .larger-button:hover {
