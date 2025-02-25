@@ -137,4 +137,26 @@
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+  }
+}
+
+.footer-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Aligns to the left */
+  
+  @media (max-width: 768px) {
+    justify-content: center; /* Centers the image on mobile */
+  }
+}
+
+.footer-image {
+  max-width: 150px; /* Adjust size as needed */
+  height: auto;
+  transform: scale(0.5);
 }

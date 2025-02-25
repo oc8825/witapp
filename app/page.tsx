@@ -49,6 +49,15 @@ export default function Home() {
       </Link>
     </div>
     <div className={backgroundStyles["footer-section"]}>
+
+
+    <div className={backgroundStyles["footer-image-container"]}>
+    <img
+  src="/images/witLogo2x.png"
+  alt="Footer Logo"
+  className={backgroundStyles["footer-image"]}
+/>
+  </div>
   <div className={buttonStyles["simple-button-container"]}>
     <Link href="/faq">
       <button className={buttonStyles["simple-button"]} onClick={() => router.push("/faq")}>
