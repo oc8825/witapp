@@ -65,3 +65,16 @@
 .larger-button:hover {
   background-color: darken(#CE022C, 10%);
 }
+
+.larger-button-container {
+  position: absolute;
+
+  // default margin for desktop
+  top: 650px;
+  left: 139px;
+  // decrease margin for mobile
+  @media (max-width: 768px) {
+      top: 1000px;
+      left: 30px;
+  }
+}

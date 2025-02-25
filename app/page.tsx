@@ -30,11 +30,13 @@ export default function Home() {
           #LOREMIPSUMDOLOR
         </p>
       </div>
-      <Link href="/enterNow">
-        <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>
-          ENTER NOW
-        </button>
-      </Link>
+      <div className={buttonStyles["larger-button-container"]}>
+        <Link href="/enterNow">
+          <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>
+            ENTER NOW
+          </button>
+        </Link>
+      </div>
     </div>
     <div className={backgroundStyles["video-section"]}>
       <h3 className={backgroundStyles["video-caption"]}>
