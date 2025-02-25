@@ -56,6 +56,11 @@ export default function Home() {
           className={backgroundStyles["footer-image"]}
         />
       </div>
+      <div className={backgroundStyles["copyright-container"]}>
+        <p className={backgroundStyles["copyright-text"]}>
+          Copyright @ 2020 Wit. All rights reserved.
+        </p>
+      </div>
       <div className={buttonStyles["simple-button-container"]}>
         <Link href="/faq">
           <button className={buttonStyles["simple-button"]} onClick={() => router.push("/faq")}>
@@ -74,11 +79,6 @@ export default function Home() {
             Terms of Service
           </button>
         </Link>
-      </div>
-      <div className={backgroundStyles["copyright-container"]}>
-        <p className={backgroundStyles["copyright-text"]}>
-          Copyright @ 2020 Wit. All rights reserved.
-        </p>
       </div>
     </div>
   </div>
