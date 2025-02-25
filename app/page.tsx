@@ -58,7 +58,7 @@ export default function Home() {
       </div>
       <div className={backgroundStyles["copyright-container"]}>
         <p className={backgroundStyles["copyright-text"]}>
-          Copyright @ 2020 Wit. All rights reserved.
+          Copyright &copy; 2020 Wit. All rights reserved.
         </p>
       </div>
       <div className={buttonStyles["simple-button-container"]}>
