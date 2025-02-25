@@ -6,18 +6,37 @@
 */
 
 // link-style button
+// Adjust button styling
 .simple-button {
-    background: none;
-    border: none;
-    color: #FD3560;
-    font-size: 12px;
-    cursor: pointer;
-    padding: 5px;
-    margin: 0 10px;
-  }
+  background: none;
+  border: none;
+  color: #FD3560;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 5px; /* Ensure buttons have equal height */
+  display: flex; /* Keep buttons aligned properly */
+  align-items: center;
+}
   
 .simple-button:hover {
   text-decoration: underline;
+}
+
+.simple-button-container {
+  display: flex; 
+  align-items: center; /* Ensures buttons & dividers align properly */
+  justify-content: flex-end; /* Aligns buttons to the right */
+  gap: 10px; /* Adjust spacing between buttons & dividers */
+  width: 100%;
+  margin-right: 40px;
+}
+
+
+.divider {
+  font-size: 12px; /* Match button text size */
+  color: white; /* Match footer text color */
+  display: flex;
+  align-items: center; /* Ensures vertical alignment with buttons */
 }
 
 // rounded-rectangle style button 

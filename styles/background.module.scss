@@ -127,16 +127,17 @@
   }
 }
 
-// style footer section and features within
 .footer-section {
   background-color: #7E011C;
   color: white;
-  display: flex;
-  justify-content: flex-end; 
-  padding-right: 40px;
-  padding: 20px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; /* Pushes content to left and right */
+  flex-direction: row;
+  width: 100%; /* Ensures full-width container */
 
   @media (max-width: 768px) {
     justify-content: center;
+    flex-direction: column;
   }
 }
