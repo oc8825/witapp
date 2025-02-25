@@ -132,12 +132,9 @@
   color: white;
   display: flex; 
   align-items: center;
-  justify-content: space-between; /* Pushes content to left and right */
+  justify-content: space-between;
   flex-direction: row;
-  width: 100%; /* Ensures full-width container */
-
-  @media (max-width: 768px) {
-    justify-content: center;
-    flex-direction: column;
-  }
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
