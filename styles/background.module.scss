@@ -23,6 +23,27 @@
       url("/images/background2x.png");
 }
 
+.fresno-logo-container {
+  position: absolute;
+
+  // default margin for desktop
+  top: 110px;
+  left: 139px;
+  // decrease margin, font size, and spacing for mobile
+  @media (max-width: 768px) {
+      top: 70px;
+      left: 30px;
+  }
+}
+
+.fresno-logo-image {
+  transform: scale(0.5);
+
+  @media (max-width: 768px) {
+    transform: scale(0.4);
+  }
+}
+
 // style video section and features within
 .video-section {
   display: flex;

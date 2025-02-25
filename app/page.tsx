@@ -15,6 +15,13 @@ export default function Home() {
     <div className={backgroundStyles["main-section"]}>
       <Countdown />
       <PrizeCarousel />
+      <div className={backgroundStyles["fresno-logo-container"]}>
+        <img
+          src="/images/circleLogo2x.png"
+          alt="Fresno State Logo"
+          className={backgroundStyles["fresno-logo-image"]}
+        />
+      </div>
       <Link href="/enterNow">
         <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>
           ENTER NOW
