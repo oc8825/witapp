@@ -22,12 +22,24 @@ export default function Home() {
           className={backgroundStyles["fresno-logo-image"]}
         />
       </div>
+      <div className={backgroundStyles["pepsi-logo-container"]}>
+        <img
+          src="/images/pepsiLogo2x.png"
+          alt="Pepsi Logo"
+          className={backgroundStyles["pepsi-logo-image"]}
+        />
+      </div>
       <div className={backgroundStyles["next-contest-container"]}>
         <p className={backgroundStyles["next-contest-text"]}>
           OUR NEXT CONTEST:
         </p>
         <p className={backgroundStyles["next-contest-hashtag"]}>
           #LOREMIPSUMDOLOR
+        </p>
+      </div>
+      <div className={backgroundStyles["title-container"]}>
+        <p className={backgroundStyles["title-text"]}>
+          FAN MOMENTS
         </p>
       </div>
       <div className={buttonStyles["larger-button-container"]}>
