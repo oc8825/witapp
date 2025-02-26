@@ -196,7 +196,7 @@
   } 
 }
 
-.step-one-text {
+.steps-text {
   color: white;
   font-size: 14px;
 }
@@ -222,11 +222,26 @@
   } 
 }
 
-.step-two-text {
-  color: white;
-  font-size: 14px;
-}
+.step-three-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: center;
+  margin: 0;
+  padding-top: 15px;
+  border-top: 1px solid #FD3560;
+  max-width: 140px;
 
+  // default margin for desktop
+  top: 450px;
+  left: 507px;
+  // decrease margin for mobile
+  @media (max-width: 768px) {
+      top: 84px;
+      left: 100px;
+  } 
+}
 .sponsor-container {
   position: absolute;
   display: flex;
