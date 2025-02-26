@@ -31,7 +31,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <PrizeCarousel />
       <div className={backgroundStyles["title-container"]}>
         <p className={backgroundStyles["title-text"]}>
           FAN MOMENTS
@@ -41,6 +40,17 @@ export default function Home() {
         <p className={backgroundStyles["subtitle-text"]}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra congue libero in finibus. Integer nulla eros, tempus.
         </p>
+      </div>
+      <PrizeCarousel />
+      <div className={backgroundStyles["sponsor-container"]}>
+        <p className={backgroundStyles["sponsor-text"]}>
+          PRESENTED BY<span className={backgroundStyles["pepsi-text"]}>&nbsp;PEPSI</span>
+        </p>
+        <img
+          src="/images/pepsiLogo2x.png"
+          alt="Pepsi Logo"
+          className={backgroundStyles["pepsi-logo-image"]}
+        />
       </div>
       <div className={backgroundStyles["step-one-container"]}>
         <p className={backgroundStyles["steps-text"]}>
@@ -57,16 +67,6 @@ export default function Home() {
         <p className={backgroundStyles["steps-text"]}>
         Step three sit amet aliquam quam faucibus sed. Proin nec ultricies libero. Vivamus sed urna.
         </p>
-      </div>
-      <div className={backgroundStyles["sponsor-container"]}>
-        <p className={backgroundStyles["sponsor-text"]}>
-          PRESENTED BY<span className={backgroundStyles["pepsi-text"]}>&nbsp;PEPSI</span>
-        </p>
-        <img
-          src="/images/pepsiLogo2x.png"
-          alt="Pepsi Logo"
-          className={backgroundStyles["pepsi-logo-image"]}
-        />
       </div>
       <div className={buttonStyles["larger-button-container"]}>
         <Link href="/enterNow">
