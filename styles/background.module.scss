@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-bottom: 50;
+    padding-bottom: 50px;
     
     background-repeat: no-repeat;
     background-size: auto, auto, auto, cover;
@@ -29,7 +29,7 @@
       @media (max-width: 768px) {
         flex-direction: column; 
         align-items: stretch;
-        gap: 20px;
+        gap: 10px;
     }
 }
 
@@ -49,19 +49,6 @@
   }
 }
 
-.pepsi-logo-container {
-  position: absolute;
-
-  // default margin for desktop
-  top: 343px;
-  left: 295px;
-  // decrease margin for mobile
-  @media (max-width: 768px) {
-      top: 70px;
-      left: 30px;
-  }
-}
-
 .pepsi-logo-image {
   // logo was consistently slightly under text, raise it
   transform: scale(0.5) translateY(-15px) translateX(-20px);
@@ -75,9 +62,8 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0px;
-  gap: 0px; 
-  
+  padding: 0;
+  gap: 0; 
 
   // default margin for desktop
   top: 75px;
@@ -102,7 +88,7 @@
   align-content: start;
   margin: 0;
   padding: 0;
-  gap: 0px; 
+  gap: 2px; 
 }
 
 .next-contest-text {
@@ -145,6 +131,7 @@
   justify-content: start;
   align-content: center;
   margin: 0; 
+  padding: 0;
 
   // default margin for desktop
   top: 200px;
@@ -156,6 +143,7 @@
     left: auto;
     width: 100%; 
     text-align: center; 
+    margin-left: 30px;
   }
 }
 
@@ -178,8 +166,8 @@
   justify-content: start;
   align-content: center;
   margin: 0;
+  padding: 0;
   max-width: 536px;
-  padding-top: 10px;
 
   // default margin for desktop
   top: 273px;
@@ -190,7 +178,9 @@
     top: auto;
     left: auto;
     width: 100%; 
-    text-align: center; 
+    text-align: left;
+    max-width: 315px;
+    margin-left: 30px;
   }
 }
 
