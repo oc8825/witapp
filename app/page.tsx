@@ -42,6 +42,16 @@ export default function Home() {
           FAN MOMENTS
         </p>
       </div>
+      <div className={backgroundStyles["subtitle-container"]}>
+        <p className={backgroundStyles["subtitle-text"]}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra congue libero in finibus. Integer nulla eros, tempus.
+        </p>
+      </div>
+      <div className={backgroundStyles["sponsor-container"]}>
+        <p className={backgroundStyles["sponsor-text"]}>
+          PRESENTED BY <span className={backgroundStyles["pepsi-text"]}>PEPSI</span>
+        </p>
+      </div>
       <div className={buttonStyles["larger-button-container"]}>
         <Link href="/enterNow">
           <button className={buttonStyles["larger-button"]} onClick={() => router.push("/enterNow")}>

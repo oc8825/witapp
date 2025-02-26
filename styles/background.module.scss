@@ -13,6 +13,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
     
     background-repeat: no-repeat;
     background-size: auto, auto, auto, cover;
@@ -31,19 +32,23 @@
 
 .fresno-logo-container {
   position: absolute;
+  margin: 0;
+  padding: 0;
 
   // default margin for desktop
   top: 75px;
   left: 100px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 70px;
-      left: 30px;
+      top: 50px;
+      left: 0px;
   }
 }
 
 .fresno-logo-image {
   transform: scale(0.5);
+  margin: 0;
+  padding: 0;
 
   @media (max-width: 768px) {
     transform: scale(0.4);
@@ -143,6 +148,61 @@
   @media (max-width: 768px) {
     font-size: 30px;
   }
+}
+
+.subtitle-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: center;
+  margin: 0;
+  max-width: 536px;
+  padding-top: 30px;
+
+  // default margin for desktop
+  top: 273px;
+  left: 139px;
+  // decrease margin for mobile
+  @media (max-width: 768px) {
+      top: 84px;
+      left: 100px;
+  }
+}
+
+.subtitle-text {
+  color: white;
+  font-size: 18px;
+}
+
+.sponsor-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-content: center;
+  margin: 0;
+  padding-top: 30px;
+
+  // default margin for desktop
+  top: 350px;
+  left: 139px;
+  // decrease margin for mobile
+  @media (max-width: 768px) {
+      top: 84px;
+      left: 100px;
+  }
+}
+
+.sponsor-text {
+  color: white;
+  font-size: 18px;
+}
+
+.pepsi-text {
+  color: #FD3560;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 // style video section and features within
