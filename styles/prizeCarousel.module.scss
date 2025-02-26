@@ -25,8 +25,9 @@
 
     // center and move further down screen on mobile
     @media (max-width: 768px) {
-        margin: 264px auto;
+        margin: 0px auto;
         max-width: 350px;
+        padding: 0px;
     } 
 }
 

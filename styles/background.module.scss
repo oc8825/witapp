@@ -219,7 +219,8 @@
     top: auto;
     left: auto;
     width: 100%; 
-    text-align: center; 
+    text-align: left; 
+    margin-left: 30px;
   } 
 }
 
@@ -248,7 +249,8 @@
     top: auto;
     left: auto;
     width: 100%; 
-    text-align: center; 
+    text-align: left; 
+    margin-left: 30px; 
   } 
 }
 
@@ -272,7 +274,8 @@
     top: auto;
     left: auto;
     width: 100%; 
-    text-align: center; 
+    text-align: left; 
+    margin-left: 30px;
   } 
 }
 
@@ -296,6 +299,7 @@
     width: 100%; 
     text-align: left; 
     align-self: flex-start;
+    margin-left: 0px;
   }
 }
 
