@@ -22,13 +22,6 @@ export default function Home() {
           className={backgroundStyles["fresno-logo-image"]}
         />
       </div>
-      <div className={backgroundStyles["pepsi-logo-container"]}>
-        <img
-          src="/images/pepsiLogo2x.png"
-          alt="Pepsi Logo"
-          className={backgroundStyles["pepsi-logo-image"]}
-        />
-      </div>
       <div className={backgroundStyles["next-contest-container"]}>
         <p className={backgroundStyles["next-contest-text"]}>
           OUR NEXT CONTEST:
@@ -65,8 +58,13 @@ export default function Home() {
       </div>
       <div className={backgroundStyles["sponsor-container"]}>
         <p className={backgroundStyles["sponsor-text"]}>
-          PRESENTED BY <span className={backgroundStyles["pepsi-text"]}>PEPSI</span>
+          PRESENTED BY<span className={backgroundStyles["pepsi-text"]}>&nbsp;PEPSI</span>
         </p>
+        <img
+          src="/images/pepsiLogo2x.png"
+          alt="Pepsi Logo"
+          className={backgroundStyles["pepsi-logo-image"]}
+        />
       </div>
       <div className={buttonStyles["larger-button-container"]}>
         <Link href="/enterNow">
