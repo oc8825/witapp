@@ -47,6 +47,17 @@ export default function Home() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra congue libero in finibus. Integer nulla eros, tempus.
         </p>
       </div>
+      <div className={backgroundStyles["step-one-container"]}>
+        <p className={backgroundStyles["step-one-text"]}>
+          Step one id libero imperdiet, lacinia arcu ac, ullamcorper ligula. Quisque ut venenatis nulla. 
+          Nulla est magna, gravida at enim eget, imperdiet lobortis.
+        </p>
+      </div>
+      <div className={backgroundStyles["step-two-container"]}>
+        <p className={backgroundStyles["step-two-text"]}>
+        Step two pulvinar, enim lacinia congue lacinia, enim quam imperdiet nisi, vel egestas tellus nisi at ex. Phasellus euismod pellentesque.
+        </p>
+      </div>
       <div className={backgroundStyles["sponsor-container"]}>
         <p className={backgroundStyles["sponsor-text"]}>
           PRESENTED BY <span className={backgroundStyles["pepsi-text"]}>PEPSI</span>
