@@ -15,8 +15,8 @@
     text-align: center;
     position: relative;
     width: 100%; 
-    max-width: 444px; // Increase for larger screens
-    min-height: 360px; // Adjust height to match
+    max-width: 444px; 
+    min-height: 360px; 
 
     // align to the right, with margin, on desktop
     margin-left: auto;
@@ -58,12 +58,8 @@
 .prize-image {
     display: block;
     width: 100%;
-    max-width: 300px;
+    max-width: 500px; // ADJUST FOR MOBILE
     margin: 0 auto;
-
-    @media (min-width: 1024px) {
-        max-width: 500px; // Increase size on larger screens
-    }
 }
 
 // style progress bar and switching slides
