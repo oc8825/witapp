@@ -15,23 +15,24 @@
     text-align: center;
     position: relative;
     width: 100%; 
-    max-width: 350px; 
-    min-height: 250px;
-    
+    max-width: 444px; // Increase for larger screens
+    min-height: 360px; // Adjust height to match
+
     // align to the right, with margin, on desktop
     margin-left: auto;
-    margin-right: 139px;
-    margin-top: 170px;
+    margin-right: 170px;
+    margin-top: 190px;
 
     // center and move further down screen on mobile
     @media (max-width: 768px) {
         margin: 264px auto;
+        max-width: 350px;
     } 
 }
 
 // check if still used/needed
 .prize-text {
-    width: 100%;
+    max-width: 404px;
     min-height: 60px;
     display: flex;
     flex-direction: column;
@@ -59,6 +60,7 @@
     overflow-wrap: break-word;
     text-align: center;
     padding: 0 10px;
+    max-width: 404px;
 }
 
 // style images that appear within slides
@@ -67,6 +69,10 @@
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+
+    @media (min-width: 1024px) {
+        max-width: 500px; // Increase size on larger screens
+    }
 }
 
 // style progress bar and switching slides
