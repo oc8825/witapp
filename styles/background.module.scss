@@ -31,18 +31,9 @@
 }
 
 .fresno-logo-container {
-  position: absolute;
+  position: relative;
   margin: 0;
   padding: 0;
-
-  // default margin for desktop
-  top: 75px;
-  left: 100px;
-  // decrease margin for mobile
-  @media (max-width: 768px) {
-      top: 50px;
-      left: 0px;
-  }
 }
 
 .fresno-logo-image {
@@ -70,27 +61,38 @@
 
 .pepsi-logo-image {
   // logo was consistently slightly under text, raise it
-  transform: scale(0.5) translateY(-15px);
+  transform: scale(0.5) translateY(-15px) translateX(-20px);
   vertical-align: middle;
 }
 
 .next-contest-container {
   position: absolute;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0px;
+  gap: 0px; 
+
+  // default margin for desktop
+  top: 75px;
+  left: 100px;
+  // decrease margin for mobile
+  @media (max-width: 768px) {
+      top: 84px;
+  }
+}
+
+.next-contest-text-container {
+  position: relative;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: start;
   margin: 0;
-  gap: 2px; 
-
-  // default margin for desktop
-  top: 130px;
-  left: 231px;
-  // decrease margin for mobile
-  @media (max-width: 768px) {
-      top: 84px;
-      left: 100px;
-  }
+  padding: 0;
+  gap: 0px; 
 }
 
 .next-contest-text {
@@ -100,6 +102,7 @@
   line-height: 1.2;
   margin: 0;
   padding: 0;
+  transform: translateX(-20px);
 
   @media (max-width: 768px) {
     font-size: 11px;
@@ -115,6 +118,7 @@
   line-height: 1.2;
   margin: 0;
   padding: 0;
+  transform: translateX(-20px);
 
   @media (max-width: 768px) {
     font-size: 13px;

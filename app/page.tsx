@@ -15,20 +15,22 @@ export default function Home() {
     <div className={backgroundStyles["main-section"]}>
       <Countdown />
       <PrizeCarousel />
-      <div className={backgroundStyles["fresno-logo-container"]}>
-        <img
-          src="/images/circleLogo2x.png"
-          alt="Fresno State Logo"
-          className={backgroundStyles["fresno-logo-image"]}
-        />
-      </div>
       <div className={backgroundStyles["next-contest-container"]}>
-        <p className={backgroundStyles["next-contest-text"]}>
-          OUR NEXT CONTEST:
-        </p>
-        <p className={backgroundStyles["next-contest-hashtag"]}>
-          #LOREMIPSUMDOLOR
-        </p>
+        <div className={backgroundStyles["fresno-logo-container"]}>
+          <img
+            src="/images/circleLogo2x.png"
+            alt="Fresno State Logo"
+            className={backgroundStyles["fresno-logo-image"]}
+          />
+        </div>
+        <div className={backgroundStyles["next-contest-text-container"]}>
+          <p className={backgroundStyles["next-contest-text"]}>
+            OUR NEXT CONTEST:
+          </p>
+          <p className={backgroundStyles["next-contest-hashtag"]}>
+            #LOREMIPSUMDOLOR
+          </p>
+        </div>
       </div>
       <div className={backgroundStyles["title-container"]}>
         <p className={backgroundStyles["title-text"]}>
