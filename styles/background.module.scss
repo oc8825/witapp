@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    padding-bottom: 50;
     
     background-repeat: no-repeat;
     background-size: auto, auto, auto, cover;
@@ -26,7 +27,8 @@
       url("/images/background2x.png");
 
       @media (max-width: 768px) {
-        height: 1090px;
+        flex-direction: column; 
+        align-items: center;
     }
 }
 
@@ -74,13 +76,18 @@
   margin: 0;
   padding: 0px;
   gap: 0px; 
+  
 
   // default margin for desktop
   top: 75px;
   left: 100px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 84px;
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 100%; 
+    text-align: center; 
   }
 }
 
@@ -139,8 +146,11 @@
   left: 139px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 84px;
-      left: 100px;
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 100%; 
+    text-align: center; 
   }
 }
 
@@ -171,8 +181,11 @@
   left: 139px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 84px;
-      left: 100px;
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 100%; 
+    text-align: center; 
   }
 }
 
@@ -197,8 +210,11 @@
   left: 139px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 84px;
-      left: 100px;
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 100%; 
+    text-align: center; 
   } 
 }
 
@@ -223,8 +239,11 @@
   left: 338px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 84px;
-      left: 100px;
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 100%; 
+    text-align: center; 
   } 
 }
 
@@ -244,8 +263,11 @@
   left: 537px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 84px;
-      left: 100px;
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 100%; 
+    text-align: center; 
   } 
 }
 
@@ -263,8 +285,11 @@
   left: 139px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 84px;
-      left: 100px;
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 100%; 
+    text-align: center; 
   }
 }
 

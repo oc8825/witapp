@@ -14,7 +14,6 @@ export default function Home() {
    <div>
     <div className={backgroundStyles["main-section"]}>
       <Countdown />
-      <PrizeCarousel />
       <div className={backgroundStyles["next-contest-container"]}>
         <div className={backgroundStyles["fresno-logo-container"]}>
           <img
@@ -32,6 +31,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <PrizeCarousel />
       <div className={backgroundStyles["title-container"]}>
         <p className={backgroundStyles["title-text"]}>
           FAN MOMENTS

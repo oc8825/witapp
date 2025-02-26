@@ -74,7 +74,10 @@
   left: 139px;
   // decrease margin for mobile
   @media (max-width: 768px) {
-      top: 1000px;
-      left: 30px;
+    position: relative; 
+    top: auto;
+    left: auto;
+    width: 100%; 
+    text-align: center; 
   }
 }
