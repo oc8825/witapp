@@ -37,7 +37,6 @@ export default function Countdown() {
     }
 
     const [timeLeft, setTimeLeft] = useState<null | ReturnType<typeof calculateTimeLeft>>(null);
-
     
     useEffect(() => {
         // only render timer on client as times will be different

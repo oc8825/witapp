@@ -44,6 +44,7 @@ $transition-width: 1352px;
     padding: 0 10px;
     padding-left: 20px;
     padding-top: 10px;
+    transform: translateY(8px);
 }
 
 .prize-caption {
@@ -99,5 +100,5 @@ $transition-width: 1352px;
     width: 100%;
     border: none;
     border-top: 2px solid #CBCBCB;
-    transform: translateY(25px)
+    transform: translateY(20px)
 }
