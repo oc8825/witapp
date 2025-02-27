@@ -1,13 +1,3 @@
-/* background.module.scss
-   Defines the styles for all background sections, including the main
-   section, video section, cta section, and footer section.This also 
-   defines styling for minor features within each background section that
-   don't need their own component (with one exception: as buttons appear
-   in mutliple sections, they have a seperate styling file even though
-   they are not defined in their own component). Adjusts the styling 
-   based on the screen size.
-*/ 
-
 $transition-width: 1352px;
 
 // styles footer section and features within

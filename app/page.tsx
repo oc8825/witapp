@@ -4,10 +4,10 @@ import Countdown from "@/components/Countdown";
 import PrizeCarousel from "@/components/PrizeCarousel";
 import Link from "next/link";
 import buttonStyles from "@/styles/buttons.module.scss";
-import backgroundStyles from "@/styles/background.module.scss";
 import mainStyles from "@/styles/mainSection.module.scss";
 import videoStyles from "@/styles/videoSection.module.scss";
 import ctaStyles from "@/styles/ctaSection.module.scss";
+import footerStyles from "@/styles/footerSection.module.scss";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -106,16 +106,16 @@ export default function Home() {
         </button>
       </Link>
     </div>
-    <div className={backgroundStyles["footer-section"]}>
-      <div className={backgroundStyles["footer-image-container"]}>
+    <div className={footerStyles["footer-section"]}>
+      <div className={footerStyles["footer-image-container"]}>
         <img
           src="/images/witLogo2x.png"
           alt="Footer Logo"
-          className={backgroundStyles["footer-image"]}
+          className={footerStyles["footer-image"]}
         />
       </div>
-      <div className={backgroundStyles["copyright-container"]}>
-        <p className={backgroundStyles["copyright-text"]}>
+      <div className={footerStyles["copyright-container"]}>
+        <p className={footerStyles["copyright-text"]}>
           Copyright &copy; 2020 Wit. All rights reserved.
         </p>
       </div>
