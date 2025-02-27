@@ -10,11 +10,10 @@ $transition-width: 1352px;
 .carousel-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-color: white;
-    padding: 10px;
-    text-align: center;
+    text-align: left;
     position: relative;
     width: 100%; 
     max-width: 444px; 
@@ -35,26 +34,33 @@ $transition-width: 1352px;
 
 // style accompanying text
 .prize-place {
-    font-size: 1.5rem;
+    font-size: 18px;
     font-weight: bold;
     color: #7E011C;
     margin-top: 5px;
     word-wrap: break-word; 
     overflow-wrap: break-word;
-    text-align: center;
+    text-align: left;
     padding: 0 10px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 .prize-caption {
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: bold;
     color: black;
-    margin-top: 5px;
     word-wrap: break-word; 
     overflow-wrap: break-word;
-    text-align: center;
+    text-align: left;
     padding: 0 10px;
     max-width: 404px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+
+    @media (max-width: $transition-width) {
+        font-size: 16px;
+    }
 }
 
 // style images that appear within slides
