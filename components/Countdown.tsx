@@ -1,7 +1,7 @@
 /* Countdown.tsx
-   Using styling from countdownStyle.module.scss, this component displays
+   Using styling from countdown.module.scss, this component displays
    a countdown to the start of voting, which is set to March 19th
-   at noon. The timer is updated every second
+   at noon. The timer is updated every second.
 */
 
 "use client";
