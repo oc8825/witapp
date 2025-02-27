@@ -6,7 +6,7 @@
 
 "use client";
 
-import styles from "../styles/countdownStyle.module.scss";
+import styles from "../styles/countdown.module.scss";
 
 import {useState, useEffect} from "react";
 
