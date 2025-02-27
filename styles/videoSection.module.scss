@@ -1,0 +1,67 @@
+$transition-width: 1352px;
+
+// style video section and features within
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 278px);
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  min-height: 300px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  
+  @media (max-width: $transition-width) {
+    width: 100%;
+  }
+}
+  
+.video-caption {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  color: black;
+
+
+  @media (max-width: $transition-width) {
+    font-size: 18px;
+  }
+}
+
+.video-caption-red {
+  color: #CE022C;
+}
+  
+.video-container {
+  display: flex;
+  justify-content: space-evenly; 
+  gap: 0px;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  min-height: 250px;
+ 
+  @media (max-width: $transition-width) {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+  
+.video-image {
+  transform: scale(0.8);
+  flex: 0 1 auto;
+  max-width: calc((100% - 278px) / 5);
+  min-width: 150px;
+  scroll-snap-align: center;
+
+  @media (max-width: $transition-width) {
+    flex: 0 0 auto;
+    max-width: 200px;
+  }
+}

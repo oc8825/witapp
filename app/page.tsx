@@ -6,6 +6,7 @@ import Link from "next/link";
 import buttonStyles from "@/styles/buttons.module.scss";
 import backgroundStyles from "@/styles/background.module.scss";
 import mainStyles from "@/styles/mainSection.module.scss";
+import videoStyles from "@/styles/videoSection.module.scss";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -77,16 +78,16 @@ export default function Home() {
         </Link>
       </div>
     </div>
-    <div className={backgroundStyles["video-section"]}>
-      <h3 className={backgroundStyles["video-caption"]}>
-        HEADLINE ABOUT VIDEOS <span className={backgroundStyles["video-caption-red"]}>ALREADY SUBMITTED</span>
+    <div className={videoStyles["video-section"]}>
+      <h3 className={videoStyles["video-caption"]}>
+        HEADLINE ABOUT VIDEOS <span className={videoStyles["video-caption-red"]}>ALREADY SUBMITTED</span>
       </h3>
-      <div className={backgroundStyles["video-container"]}>
-        <img src="/images/video1.png" className={backgroundStyles["video-image"]} alt="Image 1" />
-        <img src="/images/video2.png" className={backgroundStyles["video-image"]} alt="Image 2" />
-        <img src="/images/video3.png" className={backgroundStyles["video-image"]} alt="Image 3" />
-        <img src="/images/video4.png" className={backgroundStyles["video-image"]} alt="Image 4" />
-        <img src="/images/video5.png" className={backgroundStyles["video-image"]} alt="Image 5" />
+      <div className={videoStyles["video-container"]}>
+        <img src="/images/video1.png" className={videoStyles["video-image"]} alt="Image 1" />
+        <img src="/images/video2.png" className={videoStyles["video-image"]} alt="Image 2" />
+        <img src="/images/video3.png" className={videoStyles["video-image"]} alt="Image 3" />
+        <img src="/images/video4.png" className={videoStyles["video-image"]} alt="Image 4" />
+        <img src="/images/video5.png" className={videoStyles["video-image"]} alt="Image 5" />
       </div>
     </div>
     <div className={backgroundStyles["cta-section"]}>
