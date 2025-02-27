@@ -1,3 +1,8 @@
+/* layout.tsx
+   Defines features for the entire application, including font, the page
+   name, fluid container for managing features.
+*/
+
 import type { Metadata } from "next";
 import { Open_Sans} from "next/font/google";
 import "@/styles/globals.scss";
