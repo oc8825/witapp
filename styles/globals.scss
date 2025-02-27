@@ -34,14 +34,10 @@ html, body {
   width: 100%;
 }
 
-// Responsive container
-@media (max-width: 1024px) {
-  .container {
-    max-width: 900px;
-  }
-}
+$transition-width: 768px;
 
-@media (max-width: 768px) {
+// Responsive Container
+@media (max-width: $transition-width) {
   .container {
     max-width: 95%;
     padding: 10px;

@@ -5,6 +5,8 @@
    section and the cta action. Change presense when hover over button.
 */
 
+$transition-width: 768px;
+
 // style link-like buttons and the "|" dividers between them
 .simple-button {
   background: none;
@@ -33,7 +35,7 @@
   width: 100%;
   margin-right: 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: $transition-width) {
     justify-content: center;
     margin-right: 0;
     order: -2;
@@ -73,7 +75,7 @@
   top: 690px;
   left: 139px;
   // decrease margin for mobile
-  @media (max-width: 768px) {
+  @media (max-width: $transition-width) {
     position: relative; 
     top: auto;
     left: auto;

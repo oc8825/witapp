@@ -3,6 +3,8 @@
    based on screen size.
 */
 
+$transition-width: 768px;
+
 // style container (alignment, padding, sizing, background color, etc)
 .countdown-container {
     position: absolute;
@@ -16,7 +18,7 @@
     top: 42px;
     left: 50px;
     // decrease margin, font size, and spacing for mobile
-    @media (max-width: 768px) {
+    @media (max-width: $transition-width) {
         position: relative; 
         top: auto;
         left: auto;

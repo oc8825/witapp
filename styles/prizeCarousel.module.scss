@@ -4,6 +4,8 @@
    screen size.
 */
 
+$transition-width: 768px;
+
 // style container (alignment, padding, sizing, background color, etc)
 .carousel-container {
     display: flex;
@@ -24,7 +26,7 @@
     margin-top: 190px;
 
     // center and move further down screen on mobile
-    @media (max-width: 768px) {
+    @media (max-width: $transition-width) {
         margin: 0px auto;
         max-width: 350px;
         padding: 0px;
