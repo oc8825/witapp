@@ -1,8 +1,8 @@
 /* PrizeCarousel.tsx
-   Using styling from prizeCarousel.module.scss, this component displays 
-   a carousel of the prizes and scrolls through automatically every 5 seconds.
-   It also allows for clicking on a certain section of the progress bar
-   to jump to the corresponding slide.
+   Using styling from prizeCarousel.module.scss, this component 
+   displays a carousel of the prizes and scrolls through automatically
+   every 5 seconds. It also allows for clicking on a certain section
+   of the progress bar to jump to the corresponding slide.
 */
 
 import { Carousel } from "react-bootstrap";
@@ -30,9 +30,9 @@ const PrizeCarousel = () => {
     ];
 
     useEffect(() => {
-        /* The first cycle was skipping the second slide. Make first cycle slightly
-        longer to allow all slides to be recognized properly before starting
-        automatic transitions */
+        /* The first cycle was skipping the second slide. Make first 
+        cycle slightly longer to allow all slides to be recognized 
+        properly before starting automatic transitions */
         const startDelay = isFirstCycle ? 5100 : 5000;
         const interval = setInterval(() => {
             setActiveIndex((prevIndex) => (prevIndex + 1) % 5);
