@@ -57,6 +57,7 @@ const PrizeCarousel = () => {
                 indicators={false}
                 fade={true}
             >
+                {/* Scroll through slides*/}
                 {[1, 2, 3, 4, 5].map((num) => (
                     <Carousel.Item key={num}>
                         <div className={styles["carousel-container"]}>
@@ -66,14 +67,17 @@ const PrizeCarousel = () => {
                                 src={`/images/carousel${num}.png`}
                                 alt={`Prize ${num}`}
                             />
+
                             {/* Display divider line */}
                             <hr className={styles["divider-line"]} />
+
                             {/* Display place */}
                             <h3 className={styles["prize-place"]}>{places[num - 1]}</h3>
+
                             {/* Display caption */}
                             <p className={styles["prize-caption"]}dangerouslySetInnerHTML={{ __html: captions[num - 1] }}></p>
 
-                            {/* Display progress bar, coloring current section and handling clicks*/}
+                            {/* Display progress bar, coloring current section and handling clicks */}
                             <div className={styles["carousel-progress"]}>
                                 {[0, 1, 2, 3, 4].map((barIndex) => (
                                     <div
