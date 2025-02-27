@@ -5,6 +5,8 @@
 
 @import "bootstrap/dist/css/bootstrap.min.css";
 
+$transition-width: 768px;
+
 * {
   margin: 0;
   padding: 0;
@@ -33,8 +35,6 @@ html, body {
   padding: 0;
   width: 100%;
 }
-
-$transition-width: 768px;
 
 // Responsive Container
 @media (max-width: $transition-width) {
