@@ -67,8 +67,9 @@ $transition-width: 1352px;
 .prize-image {
     display: block;
     width: 100%;
-    max-width: 500px; // ADJUST FOR MOBILE
+    max-width: 500px;
     margin: 0 auto;
+    padding-top: 10px;
 }
 
 // style progress bar and switching slides
@@ -84,7 +85,7 @@ $transition-width: 1352px;
 
 .progress-bar {
     flex: 1;
-    background-color: white;
+    background-color: #CBCBCB;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
 }
