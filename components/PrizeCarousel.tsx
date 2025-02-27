@@ -66,6 +66,8 @@ const PrizeCarousel = () => {
                                 src={`/images/carousel${num}.png`}
                                 alt={`Prize ${num}`}
                             />
+                            {/* Display divider line */}
+                            <hr className={styles["divider-line"]} />
                             {/* Display place */}
                             <h3 className={styles["prize-place"]}>{places[num - 1]}</h3>
                             {/* Display caption */}

@@ -70,6 +70,7 @@ $transition-width: 1352px;
     max-width: 500px;
     margin: 0 auto;
     padding-top: 10px;
+    transform: translateY(15px)
 }
 
 // style progress bar and switching slides
@@ -92,4 +93,11 @@ $transition-width: 1352px;
 
 .progress-bar.active {
     background-color: #FD3560;
+}
+
+.divider-line {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #CBCBCB;
+    transform: translateY(25px)
 }
