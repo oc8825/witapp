@@ -1,6 +1,6 @@
 /* enterNow/page.tsx
    Defines a simple page to transition to show the functionality of the 
-   ENTER NOW button on the landing page. This page is not actually styled,
+   Enter Now button on the landing page. This page is not actually styled,
    and just provides a title, caption, and button to go back to the
    landing page.
 */

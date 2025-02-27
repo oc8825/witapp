@@ -1,6 +1,9 @@
+/* Define styles for the background and features within the main
+   section. Resize and re-orient features based on screen-size.
+*/
+
 $transition-width: 1352px;
 
-// style main section and features within
 .main-section {
     min-height: 100vh;
     display: flex;
