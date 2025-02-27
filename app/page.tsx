@@ -1,3 +1,9 @@
+/* page.tsx
+   Imports styles and uses them to define the features of the landing
+   page, within the four sections of mainSection, videoSection,
+   ctaSection, and footerSection.
+*/
+
 "use client";
 
 import Countdown from "@/components/Countdown";
@@ -15,6 +21,7 @@ export default function Home() {
 
   return (
    <div>
+
     <div className={mainStyles["main-section"]}>
       <Countdown />
       <div className={mainStyles["next-contest-container"]}>
@@ -79,6 +86,7 @@ export default function Home() {
         </Link>
       </div>
     </div>
+
     <div className={videoStyles["video-section"]}>
       <h3 className={videoStyles["video-caption"]}>
         HEADLINE ABOUT VIDEOS <span className={videoStyles["video-caption-red"]}>ALREADY SUBMITTED</span>
@@ -91,6 +99,7 @@ export default function Home() {
         <img src="/images/video5.png" className={videoStyles["video-image"]} alt="Image 5" />
       </div>
     </div>
+
     <div className={ctaStyles["cta-section"]}>
       <p className={ctaStyles["cta-header"]}>
         LAST CTA
@@ -106,6 +115,7 @@ export default function Home() {
         </button>
       </Link>
     </div>
+
     <div className={footerStyles["footer-section"]}>
       <div className={footerStyles["footer-image-container"]}>
         <img
@@ -139,6 +149,7 @@ export default function Home() {
         </Link>
       </div>
     </div>
+
   </div>
     
   );
