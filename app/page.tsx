@@ -5,6 +5,7 @@ import PrizeCarousel from "@/components/PrizeCarousel";
 import Link from "next/link";
 import buttonStyles from "@/styles/buttons.module.scss";
 import backgroundStyles from "@/styles/background.module.scss";
+import mainStyles from "@/styles/mainSection.module.scss";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -12,59 +13,59 @@ export default function Home() {
 
   return (
    <div>
-    <div className={backgroundStyles["main-section"]}>
+    <div className={mainStyles["main-section"]}>
       <Countdown />
-      <div className={backgroundStyles["next-contest-container"]}>
-        <div className={backgroundStyles["fresno-logo-container"]}>
+      <div className={mainStyles["next-contest-container"]}>
+        <div className={mainStyles["fresno-logo-container"]}>
           <img
             src="/images/circleLogo2x.png"
             alt="Fresno State Logo"
-            className={backgroundStyles["fresno-logo-image"]}
+            className={mainStyles["fresno-logo-image"]}
           />
         </div>
-        <div className={backgroundStyles["next-contest-text-container"]}>
-          <p className={backgroundStyles["next-contest-text"]}>
+        <div className={mainStyles["next-contest-text-container"]}>
+          <p className={mainStyles["next-contest-text"]}>
             OUR NEXT CONTEST:
           </p>
-          <p className={backgroundStyles["next-contest-hashtag"]}>
+          <p className={mainStyles["next-contest-hashtag"]}>
             #LOREMIPSUMDOLOR
           </p>
         </div>
       </div>
-      <div className={backgroundStyles["title-container"]}>
-        <p className={backgroundStyles["title-text"]}>
+      <div className={mainStyles["title-container"]}>
+        <p className={mainStyles["title-text"]}>
           FAN MOMENTS
         </p>
       </div>
-      <div className={backgroundStyles["subtitle-container"]}>
-        <p className={backgroundStyles["subtitle-text"]}>
+      <div className={mainStyles["subtitle-container"]}>
+        <p className={mainStyles["subtitle-text"]}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra congue libero in finibus. Integer nulla eros, tempus.
         </p>
       </div>
       <PrizeCarousel />
-      <div className={backgroundStyles["sponsor-container"]}>
-        <p className={backgroundStyles["sponsor-text"]}>
-          PRESENTED BY<span className={backgroundStyles["pepsi-text"]}>&nbsp;PEPSI</span>
+      <div className={mainStyles["sponsor-container"]}>
+        <p className={mainStyles["sponsor-text"]}>
+          PRESENTED BY<span className={mainStyles["pepsi-text"]}>&nbsp;PEPSI</span>
         </p>
         <img
           src="/images/pepsiLogo2x.png"
           alt="Pepsi Logo"
-          className={backgroundStyles["pepsi-logo-image"]}
+          className={mainStyles["pepsi-logo-image"]}
         />
       </div>
-      <div className={backgroundStyles["step-one-container"]}>
-        <p className={backgroundStyles["steps-text"]}>
+      <div className={mainStyles["step-one-container"]}>
+        <p className={mainStyles["steps-text"]}>
           Step one id libero imperdiet, lacinia arcu ac, ullamcorper ligula. Quisque ut venenatis nulla. 
           Nulla est magna, gravida at enim eget, imperdiet lobortis.
         </p>
       </div>
-      <div className={backgroundStyles["step-two-container"]}>
-        <p className={backgroundStyles["steps-text"]}>
+      <div className={mainStyles["step-two-container"]}>
+        <p className={mainStyles["steps-text"]}>
         Step two pulvinar, enim lacinia congue lacinia, enim quam imperdiet nisi, vel egestas tellus nisi at ex. Phasellus euismod pellentesque.
         </p>
       </div>
-      <div className={backgroundStyles["step-three-container"]}>
-        <p className={backgroundStyles["steps-text"]}>
+      <div className={mainStyles["step-three-container"]}>
+        <p className={mainStyles["steps-text"]}>
         Step three sit amet aliquam quam faucibus sed. Proin nec ultricies libero. Vivamus sed urna.
         </p>
       </div>
