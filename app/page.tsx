@@ -7,6 +7,7 @@ import buttonStyles from "@/styles/buttons.module.scss";
 import backgroundStyles from "@/styles/background.module.scss";
 import mainStyles from "@/styles/mainSection.module.scss";
 import videoStyles from "@/styles/videoSection.module.scss";
+import ctaStyles from "@/styles/ctaSection.module.scss";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -90,11 +91,11 @@ export default function Home() {
         <img src="/images/video5.png" className={videoStyles["video-image"]} alt="Image 5" />
       </div>
     </div>
-    <div className={backgroundStyles["cta-section"]}>
-      <p className={backgroundStyles["cta-header"]}>
+    <div className={ctaStyles["cta-section"]}>
+      <p className={ctaStyles["cta-header"]}>
         LAST CTA
       </p>
-      <p className={backgroundStyles["cta-caption"]}>
+      <p className={ctaStyles["cta-caption"]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Curabitur tellus, pulvinar quis volutpat et,
         mollis vitae ligula.
